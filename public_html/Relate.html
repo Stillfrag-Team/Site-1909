@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relate um Erro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body background="img/hypnotize.png">
+        <div class="jumbotron" style="background-color: rgba(255, 255, 255, 0)">
+            <div align="center">
+                <h1>Relate Um Erro</h1>
+                <a class="btn btn-outline-dark" href="index.html">Voltar para a navegação no site</a>
+            </div>
+        </div>
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.5)">
+            <form action='RelateTY.html'>
+                <h5>Informações Pessoais</h5>
+
+                <label for="validationCustom01">Nome Completo</label>
+                <input type="text" class="form-control col-sm-6" id="validationCustom01" placeholder="Nome Completo" required>
+                <div class="valid-feedback">
+                    Valido!
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email:</label>
+                    <input type="email" class="form-control col-sm-6" aria-describedby="emailHelp" placeholder="Coloque seu email" required>
+                    <small id="emailHelp" class="form-text text-muted">Nós nunca iremos enviar seu email para mais ninguém.</small>
+                </div>
+
+                <hr>
+
+                <h5>Erro</h5>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2" >Qual o tipo de erro?</label>
+                    <select multiple class="form-control col-sm-6" id="TypeError" required>
+                        <option>Ortografico</option>
+                        <option>Estou impossibilitado de entrar em algum site</option>
+                        <option>Não consigo assistir algum video ou ver alguma imagem</option>
+                        <option>Algum texto não aparece para mim</option>
+                        <option>Outro</option>
+                    </select>
+
+                    <br>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Descreva o Erro</label>
+                        <textarea class="form-control" id="TextArea1" rows="3" required=""></textarea>
+                    </div>
+
+                    <br>
+
+                    <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                    <button type="reset" value="Reset" class="btn btn-outline-dark">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
